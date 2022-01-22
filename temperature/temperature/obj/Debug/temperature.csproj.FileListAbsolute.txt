@@ -1,0 +1,7 @@
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\bin\Debug\temperature.exe.config
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\bin\Debug\temperature.exe
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\bin\Debug\temperature.pdb
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\obj\Debug\temperature.csproj.AssemblyReference.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\obj\Debug\temperature.csproj.CoreCompileInputs.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\obj\Debug\temperature.exe
+C:\Users\RAVI CHANDRA THAKUR\source\repos\temperature\temperature\obj\Debug\temperature.pdb
