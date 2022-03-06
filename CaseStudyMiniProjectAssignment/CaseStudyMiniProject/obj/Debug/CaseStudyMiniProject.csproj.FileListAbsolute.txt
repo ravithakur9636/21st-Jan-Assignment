@@ -1,0 +1,7 @@
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\bin\Debug\CaseStudyMiniProject.exe.config
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\bin\Debug\CaseStudyMiniProject.exe
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\bin\Debug\CaseStudyMiniProject.pdb
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\obj\Debug\CaseStudyMiniProject.csproj.AssemblyReference.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\obj\Debug\CaseStudyMiniProject.csproj.CoreCompileInputs.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\obj\Debug\CaseStudyMiniProject.exe
+C:\Users\RAVI CHANDRA THAKUR\source\repos\CaseStudyMiniProject\CaseStudyMiniProject\obj\Debug\CaseStudyMiniProject.pdb
