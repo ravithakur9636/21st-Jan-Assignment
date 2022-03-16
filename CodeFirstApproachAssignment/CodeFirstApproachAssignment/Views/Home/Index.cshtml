@@ -1,0 +1,72 @@
+﻿@model IEnumerable<CodeFirstApproachAssignment.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+    {
+        <b>Search By:</b> @Html.RadioButton("searchBy", "City") <text>City</text>
+        @Html.RadioButton("searchBy", "Branch") <text>Branch</text>
+        @Html.RadioButton("searchBy", "Percentage") <text>Percentage</text>
+        @Html.RadioButton("searchBy", "StudentId") <text>StudentId</text><br/>
+        @Html.TextBox("search") <input type="submit" value="Search" />
+
+    }
+</p>
+
+@Html.Raw(TempData["DeleteMessage"])
+<p style="color:green;">@TempData["UpdateMessage"]</p>
+<p style="color:green;">@TempData["InsertMessage"]</p>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" border="2">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Branch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Percentage)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Branch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Percentage)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudentId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudentId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
+            </td>
+        </tr>
+    }
+
+</table>
