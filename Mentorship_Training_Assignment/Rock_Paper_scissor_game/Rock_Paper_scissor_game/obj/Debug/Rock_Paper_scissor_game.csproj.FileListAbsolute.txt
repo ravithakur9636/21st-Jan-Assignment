@@ -1,0 +1,10 @@
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\bin\Debug\Rock_Paper_scissor_game.exe.config
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\bin\Debug\Rock_Paper_scissor_game.exe
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\bin\Debug\Rock_Paper_scissor_game.pdb
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.csproj.AssemblyReference.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.Form1.resources
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.Properties.Resources.resources
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.csproj.GenerateResource.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.csproj.CoreCompileInputs.cache
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.exe
+C:\Users\RAVI CHANDRA THAKUR\source\repos\Rock_Paper_scissor_game\Rock_Paper_scissor_game\obj\Debug\Rock_Paper_scissor_game.pdb
