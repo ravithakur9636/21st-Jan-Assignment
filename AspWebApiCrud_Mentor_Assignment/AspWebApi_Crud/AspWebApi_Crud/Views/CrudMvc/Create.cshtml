@@ -1,0 +1,96 @@
+﻿@model AspWebApi_Crud.Models.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm("Add","CrudMvc",FormMethod.Post)) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Product</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductPrice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Category_id, "Category_id", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @{ 
+                    AspWebApi_Crud.Models.MVC_Mentor_AssignmentEntities db = new AspWebApi_Crud.Models.MVC_Mentor_AssignmentEntities();
+                    List<AspWebApi_Crud.Models.Category> ListCategory = db.Categories.ToList();
+                    <select name="Category_id" class="form-control">
+                        @{ 
+                            <option value="" disabled hidden selected>Select Category</option>
+                            foreach(AspWebApi_Crud.Models.Category s in ListCategory)
+                            { 
+                                <option value="@s.Category_id">@s.Category_Name</option>
+                            }
+                        }
+                    </select>
+                }
+                @Html.ValidationMessageFor(model => model.Category_id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Unit_ID, "Unit_ID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @{
+                    AspWebApi_Crud.Models.MVC_Mentor_AssignmentEntities bd = new AspWebApi_Crud.Models.MVC_Mentor_AssignmentEntities();
+                    List<AspWebApi_Crud.Models.Unit> ListUnit = bd.Units.ToList();
+                    <select name="Unit_ID" class="form-control">
+                        @{
+                            <option value="" disabled hidden selected>Select Unit </option>
+                            foreach(AspWebApi_Crud.Models.Unit s in ListUnit)
+                            {
+                                <option value="@s.Unit_ID">@s.Unit_Name</option>
+                            }
+                        }
+                    </select>
+                }
+                @Html.ValidationMessageFor(model => model.Unit_ID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
